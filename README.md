@@ -1,2 +1,3 @@
-# first project trying to learn webdev
-# basic css/html recreation of Google homepage
+# google homepage
+first project trying to learn webdev
+basic css/html recreation of Google homepage
