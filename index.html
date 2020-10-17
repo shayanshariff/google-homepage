@@ -13,8 +13,6 @@
         }
         .searchbar{
             display: flex;
-
-
         }
         .textbox{
             display: flex;
@@ -22,6 +20,80 @@
             height: 40px;
             margin: 0 auto;
         }
+
+        #searchButton{
+            display:flex;
+            padding: 20px;
+            height: 30px;
+            width: 200px;
+            justify-content: flex-end;
+        }
+        #LuckyButton{
+            display:flex;
+            padding: 20px;
+            height: 30px;
+            width: 200px;
+            justify-content: flex-start;
+            
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        font-weight: lighter;
+        font-size: small;
+        margin: 0;
+        padding: 0;
+        }
+        ol {
+        display: flex;
+        list-style-type: none;
+        font-weight: lighter;
+        font-size: small;
+        margin: 0;
+        padding: 0;
+        color: rgb(78, 77, 77);
+
+        }
+        .text {
+            margin: 10px;
+            margin-top: 8px;
+        }
+        #signIn{
+            background-color: #4285F4;
+            color: white;
+            border-radius: 4px;
+            margin: 10px;
+            border: 0;
+            margin-top: 0;
+            padding: 8px 18px;
+            font-weight: bold;
+
+        }
+        .foot-right {
+            display: flex;
+            justify-content: right;
+            padding-left: 700px;
+
+        }
+        .foot-left {
+            display: flex;
+            padding-right: 700px;
+            justify-content: left;
+        }
+        .footer {
+            display: flex;
+            position: absolute;
+            bottom: 0px;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+
     </style>
     <head>
         <title>
@@ -29,12 +101,46 @@
         </title>
     </head>
     <body>
+        <section class="navbar">
+            <div class="nav">
+                <ul>
+                    <li class="text">Gmail</li>
+                    <li class="text">Images</li>
+                    <li><button type="button" id="signIn">Sign in</button></li>
+                  </ul> 
+            </div>
+        </section>
         <section class="container">
             <div class="logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id="logo_img" alt="Google Logo">
             </div>
             <div class="searchbar">
                 <input type="text" class="textbox" placeholder="Search...">
+            </div>
+            <section class="buttons">
+                <div id="searchButton">
+                    <button type="button">Google Search</button>
+                </div>
+                <div id="LuckyButton">
+                    <button type="button">I'm Feeling Lucky</button>
+                </div>
+            </section>
+        </section>
+        <section class="footer">
+
+            <div class="foot-left">
+                <ol>
+                    <li class="text">Advertising</li>
+                    <li class="text">Business</li>
+                    <li class="text">How Search Works</li>
+                  </ol> 
+            </div>
+            <div class="foot-right">
+                <ol>
+                    <li class="text">Privacy</li>
+                    <li class="text">Terms</li>
+                    <li class="text">Settings</li>
+                  </ol> 
             </div>
         </section>
     </body>
